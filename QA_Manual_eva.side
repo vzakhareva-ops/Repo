@@ -1,0 +1,387 @@
+{
+  "id": "5564af97-fba0-4868-97a7-8982dd4d5c45",
+  "version": "2.0",
+  "name": "QA_Manual_eva",
+  "url": "https://eva.ua",
+  "tests": [{
+    "id": "c56b2436-0d80-4222-ab5a-c7dd91d265b4",
+    "name": "Пошук css",
+    "commands": [{
+      "id": "7aa54689-b529-4a17-beed-b14f242e6dd4",
+      "comment": "",
+      "command": "open",
+      "target": "/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5364391-0215-45fa-bdef-17dbe9e8306b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1155x886",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3997bb5-62fa-4b49-aeac-2b00a983c947",
+      "comment": "",
+      "command": "click",
+      "target": "css=.m-search-bar__input",
+      "targets": [
+        ["css=.m-search-bar__input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='viewport']/div/div/div[3]/header/div/div[4]/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a132b8a4-7eea-4248-b84c-9e64fc876be6",
+      "comment": "",
+      "command": "type",
+      "target": "css=.m-search-bar__input",
+      "targets": [
+        ["css=.m-search-bar__input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='viewport']/div/div/div[3]/header/div/div[4]/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "капсули"
+    }, {
+      "id": "5669a289-65e7-48b7-9f13-044f4f969cca",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.m-search-bar__input",
+      "targets": [
+        ["css=.m-search-bar__input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='viewport']/div/div/div[3]/header/div/div[4]/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "e9e74da0-0250-4dfe-b10c-f9ab21bcd59d",
+    "name": "Категорії",
+    "commands": [{
+      "id": "a1b82f3c-a29f-4022-a7ae-50c4ad2fd604",
+      "comment": "",
+      "command": "open",
+      "target": "/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da09ac86-2c5d-410f-a038-bb3bd6efa37e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1153x779",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9b41c3a-3777-44f7-a396-acc2d7e085f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navigation__trigger",
+      "targets": [
+        ["css=.navigation__trigger", "css:finder"],
+        ["xpath=//div[@id='viewport']/div/div/div[3]/header/div/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Каталог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "788fd57c-0921-4ac5-bb47-64f04ee38a26",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Штучні ялинки",
+      "targets": [
+        ["linkText=Штучні ялинки", "linkText"],
+        ["css=.links__colum:nth-child(1) > .links__level-0-wrapper:nth-child(1) > .links__level-1-wrapper > .sf-link:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Штучні ялинки')]", "xpath:link"],
+        ["xpath=//div[@id='viewport']/div/div/div[3]/header/div/div[3]/div[2]/div/div[2]/div/div/div/div/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ua/12454-12527-12528/elki/')]", "xpath:href"],
+        ["xpath=//div/div/div/div[2]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Штучні ялинки')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3730d574-7268-4a9b-a250-d1b42e367b4b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.desktop-only #sfSelect > span",
+      "targets": [
+        ["css=.desktop-only #sfSelect > span", "css:finder"],
+        ["xpath=//div[@id='sfSelect']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'За популярністю')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "82efe80d-f11e-4238-972e-0eaefd4bd469",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sf-select__dropdown:nth-child(4) #final_price > span",
+      "targets": [
+        ["css=.sf-select__dropdown:nth-child(4) #final_price > span", "css:finder"],
+        ["xpath=//li[@id='final_price']/span", "xpath:idRelative"],
+        ["xpath=//li[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Від дешевих до дорогих')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "65e18e0f-97ed-4a38-a83c-0dae5f658fab",
+    "name": "Пошук xpath",
+    "commands": [{
+      "id": "b88703ba-fc30-459e-b2a9-b350115551a5",
+      "comment": "",
+      "command": "open",
+      "target": "/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "46643505-7462-4908-85a4-3a05721c25ec",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1155x886",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dc8caadf-fa93-44c2-8c50-06f70380b3fb",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.m-search-bar__input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='viewport']/div/div/div[3]/header/div/div[4]/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c69bf80-4ad8-419d-b8ba-65ad7b5bd393",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//input[@value='']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c921100-32e7-4a2c-af84-18b44279a500",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//html/body/div/div[2]/div[2]/div[1]/div/div[2]/div/div[1]/button",
+      "targets": [
+        ["css=.m-search-bar__input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='viewport']/div/div/div[3]/header/div/div[4]/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Бальзам для губ"
+    }, {
+      "id": "54bbccbb-3335-47c8-b1ee-7be7b6e9e5ab",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.m-search-bar__input",
+      "targets": [
+        ["css=.m-search-bar__input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='viewport']/div/div/div[3]/header/div/div[4]/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "94a815bc-d1c3-432f-a8ed-24977a06f0eb",
+    "name": "Сертифікат",
+    "commands": [{
+      "id": "4042998e-21af-4a05-8e26-890f573f2721",
+      "comment": "",
+      "command": "open",
+      "target": "/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18e31367-8462-4660-a923-e9e9852d46d5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93e36098-f34e-40f9-9fd5-4bb295191011",
+      "comment": "",
+      "command": "click",
+      "target": "css=.o-header-top__buyer-dropdown > .sf-button",
+      "targets": [
+        ["css=.o-header-top__buyer-dropdown > .sf-button", "css:finder"],
+        ["xpath=//div[@id='viewport']/div/div/div[2]/div/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": "Покупцям"
+    }, {
+      "id": "03b82f3b-3849-4377-bff3-e2f1932e012c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a-buyers-list__item:nth-child(7)",
+      "targets": [
+        ["css=.a-buyers-list__item:nth-child(7)", "css:finder"],
+        ["xpath=//div[@id='popper_ha0dppdw_d8ibh7']/div[2]/div/div/ul/li[7]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/ul/li[7]", "xpath:position"],
+        ["xpath=//li[contains(.,'Перевірити сертифікат')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9b440ed-7c7a-44eb-a5fd-c58fc7f59ee5",
+      "comment": "",
+      "command": "type",
+      "target": "css=.sf-input--has-text #email",
+      "targets": [
+        ["css=.sf-input--has-text #email", "css:finder"],
+        ["xpath=(//input[@id='email'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='viewport']/div[3]/div/div/div[2]/div/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "1111111111111"
+    }, {
+      "id": "46fc38b9-e5ea-495f-9309-5f774a20f6f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gift-cert__form .btn__text",
+      "targets": [
+        ["css=.gift-cert__form .btn__text", "css:finder"],
+        ["xpath=//div[@id='viewport']/div[3]/div/div/div[2]/div/div/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[2]/div/div/div/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Перевірити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "23480e22-4160-4e5b-a040-a770bf8cb99b",
+    "name": "Пошук aep",
+    "commands": [{
+      "id": "c02e198b-6ac9-473d-a8ac-277a1613f847",
+      "comment": "",
+      "command": "open",
+      "target": "/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43fa2f74-8ca8-4a52-b782-bc3bed5c3454",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1155x886",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7c336b4-e77c-4735-9fea-8477b4886e16",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='']",
+      "targets": [
+        ["css=.m-search-bar__input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='viewport']/div/div/div[3]/header/div/div[4]/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fa9702d-95bf-4752-a9fe-60e036ecb509",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//html/body/div/div[2]/div[2]/div[1]/div/div[3]/header/div/div[4]/div/form/input",
+      "targets": [],
+      "value": "\"Пошук на eva.ua\""
+    }, {
+      "id": "07f6674e-c354-4064-9f60-aae8cd6554c9",
+      "comment": "",
+      "command": "type",
+      "target": "css=.m-search-bar__input",
+      "targets": [
+        ["css=.m-search-bar__input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='viewport']/div/div/div[3]/header/div/div[4]/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Шампунь"
+    }, {
+      "id": "97d94c45-c6d9-40d8-ac0b-26f1c7f51122",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.m-search-bar__input",
+      "targets": [
+        ["css=.m-search-bar__input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='viewport']/div/div/div[3]/header/div/div[4]/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "5ebf00e8-efab-4c21-98b2-e7288f092976",
+    "name": "Сортування",
+    "commands": [{
+      "id": "c299814f-6ccc-45ce-b5d8-78c40596fbc0",
+      "comment": "",
+      "command": "open",
+      "target": "https://eva.ua/ua/15906/iskusstvennye-sosny-elki/?sort=final_price",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64f42184-a14b-4375-8979-ef99b6a16792",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//html/body/div/div[2]/div[2]/div[2]/div/div[4]/div[2]/div/div[2]/div/div/div/div/div[4]/ul/li[1]/span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08317404-4b2f-4c92-906d-beae277345d3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//html/body/div/div[2]/div[2]/div[2]/div/div[4]/div[2]/div/div[2]/div/div[2]/div/div/div[2]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41731f81-e0ba-49cb-83fd-0db2f761b330",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//html/body/div/div[2]/div[2]/div[2]/div/div[4]/div[2]/div/div[2]/div/div/div/div/div[4]/ul/li[1]/span",
+      "targets": [],
+      "value": "За популярністю"
+    }, {
+      "id": "de5680a3-692d-43bf-92cd-c5ce1f13d7f7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//html/body/div/div[2]/div[2]/div[2]/div/div[4]/div[2]/div/div[2]/div/div/div/div/div[4]/ul/li[2]/span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd625552-7d51-49e4-b817-a4fd79c032d4",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//html/body/div/div[2]/div[2]/div[2]/div/div[4]/div[2]/div/div[2]/div/div/div/div/div[4]/ul/li[2]/span",
+      "targets": [],
+      "value": "Від дешевих до дорогих"
+    }, {
+      "id": "475e929f-c59c-4778-9234-5c54cf8e9813",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//html/body/div/div[2]/div[2]/div[2]/div/div[4]/div[2]/div/div[2]/div/div/div/div/div[4]/ul/li[3]/span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96fe5268-e280-4945-9d9a-3327c9b13443",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//html/body/div/div[2]/div[2]/div[2]/div/div[4]/div[2]/div/div[2]/div/div/div/div/div[4]/ul/li[3]/span",
+      "targets": [],
+      "value": "Від дорогих до дешевих"
+    }]
+  }],
+  "suites": [{
+    "id": "34e010c3-73eb-43d7-8fe3-2ea76cbd64db",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c56b2436-0d80-4222-ab5a-c7dd91d265b4"]
+  }],
+  "urls": ["https://eva.ua/"],
+  "plugins": []
+}
